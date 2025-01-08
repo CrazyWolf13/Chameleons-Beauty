@@ -22,13 +22,14 @@
     list-style-image: url("../icons/home.svg") !important;
 }
 
-/* Ícono bookmark */
-
+/* Ícono bookmark --> Comment out looks ugly -> CrazyWolf13*/
+/*
 #pageAction-panel-bookmark[starred], #star-button[starred] {
     list-style-image: url("../icons/bookmark.svg") !important; }
 #pageAction-panel-bookmark, #star-button {
     list-style-image: url("../icons/bookmark-empty.svg") !important;
 }
+*/
 
 /* Tracking protection icon */
 
