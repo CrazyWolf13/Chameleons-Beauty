@@ -42,7 +42,7 @@
   scrollbar-color: #38375580 #18173530 !important;                                                                 /* Colores - Barra de deplazamiento */
   
     /*ColorBotónGuardar*/
-    --button-primary-bgcolor: #304af1 !important;
+    --button-primary-bgcolor: var(--main-background-var-lightened-strong) !important;
 
     /*ColorLetrasBotónGuardar*/
     --button-primary-color: #eaeaea !important;
@@ -95,7 +95,7 @@
   --lwt-toolbar-field-highlight-text: #eaeaea !important;                                                          /*"toolbar_field_highlight_text": "#eaeaea"*/
   --autocomplete-popup-highlight-background: var(--button-primary-bgcolor) !important;                             /*"popup_highlight": "#006f80"*/
   --autocomplete-popup-highlight-color: #eaeaea !important;                                                        /*"popup_highlight-letras": "#006f80"*/
-  --lwt-toolbarbutton-icon-fill-attention: #4d7afe !important;                                                     /*"icons_attention": "#00dbfd"*/
+  --lwt-toolbarbutton-icon-fill-attention: var(--main-background-var) !important;                                                     /*"icons_attention": "#00dbfd"*/
   
   --toolbarbutton-hover-background: color-mix(in srgb, transparent 92%, var(--lwt-tab-text)) !important;           /*"button_background_hover": "#26242e"*/
   --toolbarbutton-active-background: color-mix(in srgb, transparent 86%, var(--lwt-tab-text)) !important;          /*"button_background_active": "#26242e"*/
@@ -163,6 +163,11 @@
 /* ----------------------------------------- Private Browsing Mode ----------------------------------------- */
 
 :root:is([privatebrowsingmode="temporary"]){
+
+  --main-background-var: #7d34c3;
+  --main-background-var-darkened: color-mix(in srgb, var(--main-background-var) 40%, transparent 60%);
+  --main-background-var-darkened2: color-mix(in srgb, var(--main-background-var) 40%, black 50%);
+  --main-background-var-lightened-strong: color-mix(in srgb, var(--main-background-var) 60%, black 40%);
   
   --lwt-header-image: none !important; 
   --lwt-additional-images: none !important;

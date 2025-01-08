@@ -11,7 +11,7 @@
 /*Borde Gradiente paneles desplegables - Arrowpanels*/
 
 :is(menupopup, panel)[type="arrow"]{
-    background-image: linear-gradient(165deg, #d02f85ee 0%, #b336fc9e 8%, #3567fd9e 30%, #4e7afd9e 60%,#4e89fd9e 70%, #d02f859e 100%) !important; 
+    background-image: linear-gradient(to bottom, var(--main-background-var), var(--main-background-var-darkened));
     background-repeat: no-repeat !important;
     background-color: var(--arrowpanel-background) !important;
     border-radius: 6px !important;

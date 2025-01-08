@@ -3,9 +3,7 @@
 
 /* bookmark_text */
 
-.browser-toolbar:not(.titlebar-color) {
-    color: var(--lwt-text-color) !important;
-}              
+           
 
 /* Personalizar barra de busqueda */
 
@@ -32,9 +30,12 @@ findbar:-moz-lwtheme {
 }
 
 .urlbarView-row:not([type="tip"], [type="dynamic"])[selected] > .urlbarView-row-inner, .urlbarView-row-inner[selected]  {
-    background-image: var(--panel-separator-zap-gradient) !important; 
+    background-image: none !important;
+    background-color: var(--main-background-var-darkened2) !important;
     color: #ffffff !important; 
     border-radius: 4px !important; 
+
+    
 }
 
 /* margenes sugerencias de búsqueda */
@@ -159,6 +160,10 @@ findbar:-moz-lwtheme {
   height: calc(var(--urlbar-min-height) - 8px - 2 * var(--urlbar-container-padding)) !important;
 }
 
+#urlbar-background, #searchbar {
+    border: 1.8px solid #5b5963 !important;
+}
+
 /* Linea colorida urlbar focus */
 
 #urlbar[open] #urlbar-background, #urlbar[focused] #urlbar-background {
@@ -169,7 +174,7 @@ findbar:-moz-lwtheme {
 }
 
 #urlbar[focused] {
-    background-image: linear-gradient(to bottom right, #fd189270 0%, #b02cfc70 30%, #33b3fd70 45%, #00aaff70 60%, #fd189270 100%);
+    background-color: var(--main-background-var);
     border-radius: 4px !important;
 }
 
@@ -186,7 +191,7 @@ findbar:-moz-lwtheme {
 
 #urlbar[open] {
     border-radius: 6px !important;
-    background-image: linear-gradient(to bottom right, #fd189260 0%, #b02cfc60 30%, #33b3fd60 45%, #00aaff60 60%, #fd189260 100%);
+    background-color: var(--main-background-var-darkened);
     max-height: -moz-available !important;
     border-radius: 6px !important;
     animation: ease-in-out 500ms !important;
