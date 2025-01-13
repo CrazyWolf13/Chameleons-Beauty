@@ -117,7 +117,7 @@
       
   --autocomplete-popup-hover-background: var(--button-hover-bgcolor) !important;                                   /*Color hover de sujerencias de búsqueda*/
 
-  --shield-icon-personal: url("../icons/shield-dark.svg") !important;                                             /*Ícono protección contra rastreo*/
+  /* --shield-icon-personal: url("../icons/shield-dark.svg") !important;                                             Ícono protección contra rastreo*/
   --animated-beats: url("../icons/beats-dark.gif") !important;                                                    /* Dark animated beats*/
 }}
 
