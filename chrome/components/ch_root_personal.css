@@ -30,6 +30,8 @@
     
     --tab-height-personal: 32px ;                                                                 /* Tamaño altura de pestañas*/
     --toolbar-height-personal: 34px ;                                                             /* Toolbar height */
+
+    --my-group-line-thickness: 2px !important;  
     
     --logo-wordmark-visibility: 1 ;                                                               /* :1 visible, :0 invisible ; Logo-wordmark*/
     --logo-wordmark-display: flex ;                                                               /* :none ->eliminar , :flex ->Mostrar;  Logo-wordmark*/
@@ -62,7 +64,12 @@
   
   :root[privatebrowsingmode="temporary"]{ --general-color: var(--purple) !important; }                    /* Accent color private mode */
   
-  
+  @media -moz-pref("firefoxchameleon.left-sidebar") or -moz-pref("sidebar.revamp") or -moz-pref("firefoxchameleon.tree-tabs") {
+    :root{
+      --my-vertical-toolbar-width: 41px ;                                                                 /* 'left-sidebar' width */
+      --uc-sidebar-hover-width: 200px ;
+    }}
+
   /* ---------------------------------------------------- -Main Image- Config ------------------------------------------------------ */
   
   @media (-moz-bool-pref:"firefoxchameleon.main-image") {
