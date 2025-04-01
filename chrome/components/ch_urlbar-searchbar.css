@@ -46,6 +46,7 @@ findbar {
 /* tamaño letras urlbar */
 
 #urlbar-input {
+    font-weight: 501 !important;
     margin-left: 1px !important;
 }
 
