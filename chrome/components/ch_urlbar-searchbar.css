@@ -26,7 +26,8 @@ findbar {
 }
 
 .urlbarView-row:not([type="tip"], [type="dynamic"])[selected] > .urlbarView-row-inner, .urlbarView-row-inner[selected]  {
-    background-image: var(--my-menuitem-gradient) !important; 
+    background-image: none !important;
+    background-color: var(--main-background-var-darkened2) !important;
     color: #ffffff !important; 
     border-radius: var(--toolbarbutton-border-radius) !important; 
 }
@@ -40,6 +41,7 @@ findbar {
 
 #urlbar-input {
     margin-left: 1px !important;
+    font-weight: 501 !important;
 }
 
 /* Sugerencias de búsqueda */
@@ -151,6 +153,10 @@ findbar {
     }
 }
 
+#urlbar-background, #searchbar {
+    border: 1.8px solid #5b5963 !important;
+}
+
 #urlbar {
     &:is([focused], [open]) {
         
@@ -162,7 +168,7 @@ findbar {
             inset: 0px;
             padding: 1px;
             border-radius: var(--toolbarbutton-border-radius) !important;
-            background: repeat var(--gradient) !important;
+            color: var(--main-background-var
             background-repeat: no-repeat !important;
             mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
             mask-composite: exclude;

@@ -1,53 +1,55 @@
-# Chameleons-Beauty to Firefox CSS
-Theme to <a href="https://addons.mozilla.org/es/firefox/user/7024772/">"Beautiful" Themes</a> Lovers.
-<ul><li>(ES) Compatibilidad completa con la versión estable del navegador.</li>
-<li>(EN) Complete Compatibility with stable version of the browser.</li></ul>
+# Firefox CSS Customization 🚀
+This repository contains a series of CSS files that alter the appearance of Firefox. You can use these customizations to change the look of tabs, the homepage, and other elements of Firefox.
 
-![Chameleon-Light_dark_splash](https://github.com/Godiesc/Chameleons-Beauty/assets/22057609/e93c335f-0d26-4d96-b8ce-8aa6323dde13)
+# Showcase
+![Showcase](./gh-assets/showcase.png)
 
-## Características Adicionales- Additional Features
+### Instructions 🛠️
 
-![SplashChameleon](https://github.com/Godiesc/Chameleons-Beauty/assets/22057609/8fc85ba5-b953-490f-977e-2a566f6669f9)
+1. **Enable User Customization in `about:config`**
 
-## Adapted to "Beautiful" Themes
+   - Type `about:config` in the address bar and accept the risks. ⚠️
+   - Search for `toolkit.legacyUserProfileCustomizations.stylesheets` and set it to `true`. ✔️
 
-You should install the themes from firefox add-ons web page: <a href= "https://addons.mozilla.org/es/firefox/user/7024772/">Here</a>
+2. **Find and Open Your Profile Folder 📁**
 
-## Extras 
-<ul>
-<li><a href ="https://github.com/Godiesc/Chameleons-Beauty/tree/main/Extras/Main-Image"> Main-Image </a> - This configuration will simulate a image behind all the browser.</li>
-<li><a href ="https://github.com/Godiesc/Chameleons-Beauty/tree/main/Extras/Oneline"> OneLine </a> - The tabs-bar will be next to the navbar.</li>
-<li><a href ="https://github.com/Godiesc/Chameleons-Beauty/tree/main/Extras/Left-sidebar"> Left-sidebar </a> - The bookmark-bar will display on the left of the window.</li>
-<li><a href ="https://github.com/Godiesc/Chameleons-Beauty/tree/main/Extras/Tree-tabs"> Tree-tabs </a> - Perfect match if you use tree-tabs extensions.</li>
-<li><a href="https://github.com/Godiesc/Chameleons-Beauty/tree/main/Extras/Play-Pause">Play/Pause icon button extension.</a> - Enables the possibility to play or pause tabs with a click on the sound icon.</li></ul>
+   - Type `about:support` in your address bar.
+   - Under "Application Basics," click the "Open Folder" button. You should now see your profile folder.
 
-## ¿Cómo instalar? - How to install?
-   
-<b> Steps to apply the theme:</b>
-<ol>
-   <li>Download the theme from the <b> << Releases >> </b> section, in the right side of this page</code></li> 
-   <li>Copy the chrome folder and the user.js file into your Firefox profile directory. </li>
-   <li>Use the theme <a href="https://addons.mozilla.org/es/firefox/addon/beautiful-opera-gx-proton/">Beautiful GX Proton.</a></li>
-   <li>Restart the browser. </li></ol>
-   <ul>
-   <li>To find out your profile directory go to <a href="https://github.com/Godiesc/Chameleons-Beauty#example-of-aboutsupport"> about:support</a> or about:profiles.</li></ul>
+3. **Create the Folder and Its Files 📂**
 
-## Personalizar - Customize
-<b><i>Personalizaciones Varias - Various customizations</i></b>
-<ul>
-<li><p>The file <code>chrome</code> >> <code>components</code> >> <code>ch_root-personal.css</code> contain a very useful config rules to a better an easy custom of the wallpaper, height tabs, etc. There are descriptions on the right of each rule to you know what you can change.</p></li></ul>
-<b><i>Fondo Nueva Pestaña - NewTab Wallpaper</i></b>
-<ul>
-<li><p>(Option 1) Into the directory: <code>chrome</code> >> <code>images</code> >> <code>newtab</code> there is a set of wallpapers , the image that the theme will select by default is the one with the name: "wallpaper-dark.png" for dark themes, and "wallpaper-light.png" for light themes, you could rename the image you want with that name and the theme will select that one, you could add your own images. You can find more images in: <a href="https://imgur.com/a/j78IhJN"><b>This Gallery</b></a>. If you don't want a wallpaper just delete the file with that name. <b>A restart of the browser is necessary!. </b></p></li>
-<li><p>(Option 2) You could edit the file <code>chrome</code> >> <code>components</code> >> <code>ch_root-personal.css</code> lines 5 and 11 for dark and light wallpaper.<p></li></ul>
+   - In the profile folder, create a new folder named `chrome`.
+   - Create two new files in the `chrome` folder: `userChrome.css` and `userContent.css`.
 
-## Compatibilidad - Compatibility
+### My Custom Configuration 🌟
 
-<ul><li>Windows 10 (Tested - Probado)  ✔</li>
-<li>Linux - ManjaroKDE (Tested - Probado)  ✔</li>
-<li>Windows 7 (Not tested - No probado) ⚠️</li>
-<li>Windows 11 (Not tested - No Probado) ⚠️</li>
-<li>MacOS (Not tested - No Probado) ⚠️</li></ul></ul>
+- **Tab Sidebar**: Install [Tab Center Reborn](https://addons.mozilla.org/en-US/firefox/addon/tab-center-reborn/) and add the CSS code from the `tabcenterreborn.css` file in this repository. 🗂️
+- **Homepage**: Install [nightTab](https://addons.mozilla.org/en-US/firefox/addon/nighttab/) and import the configuration from this repository. 🏠
+- **userChrome**: Download the files and contents from this repository.
 
-# Example of about:support
-![120349392-b372f980-c2c3-11eb-904d-b088168fd849](https://user-images.githubusercontent.com/22057609/156908375-824f8679-56a5-4d09-a86f-353a7f61135e.png)
+### Importing the Configuration 📥
+
+To import this configuration:
+1. Enable `userChrome` as described above.
+2. Open the profile folder.
+3. Clone this repository and copy the contents into the main directory (profile folder). 🔄
+
+### License 📜
+
+This project is licensed under the MPL-2 License.
+
+---
+
+### Acknowledgements 🙏
+
+I would like to extend my heartfelt thanks to the following individuals and projects for their invaluable contributions:
+
+- **[dexeonify](https://github.com/dexeonify/firefox-css)**: For sharing its setup and showcasing nightTab, which has greatly inspired and enhanced my own customizations.
+
+- **[zombieFox](https://github.com/zombieFox/nightTab)**: For creating nightTab, a beautiful and highly customizable homepage tool that has significantly enriched the Firefox experience.
+
+- **[Godiesc](https://github.com/Godiesc/Chameleons-Beauty)**: For creating a wonderful set of Firefox themes, particularly Chameleons Beauty, which serves as the base for my slightly modified variant. Your work is truly amazing and has brought a unique aesthetic to my browser.
+
+---
+
+Developed by CrazyWolf13 with ❤️

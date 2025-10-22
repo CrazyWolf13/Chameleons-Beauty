@@ -12,6 +12,7 @@
   --my-content-border-color: color-mix(in srgb, 
     var(--toolbar-field-color) 8%, transparent) !important;                            /* Border color for web content is some situations */
 
+  --button-primary-bgcolor: var(--main-background-var-lightened-strong) !important;
   /*--lwt-accent-color: var(--toolbar-bgcolor, Field) !important;                      /* frame */
   /*--toolbox-textcolor: var(--tab-selected-textcolor) !important;                     /* tab_background_text */
   --lwt-accent-color-inactive: var(--lwt-accent-color, Field) !important;              /* frame_inactive */
@@ -136,7 +137,7 @@
       
   --autocomplete-popup-hover-background: var(--button-hover-bgcolor) !important;                                   /*Color hover de sujerencias de búsqueda*/
 
-  --shield-icon-personal: url("../icons/shield-dark.svg") !important;                                             /*Ícono protección contra rastreo*/
+  /* --shield-icon-personal: url("../icons/shield-dark.svg") !important;                                             Ícono protección contra rastreo*/
   --my-beats-image: url("../icons/beats.webp") !important;                                                    /* Dark animated beats*/
   
   --noise-urlbar-personal: url("../icons/urlbar-noise-light.png") !important;                                           /* Urlbar [open] - noise background */
@@ -161,7 +162,7 @@
   --lwt-toolbar-field-highlight-text: #eaeaea !important;                                                          /*"toolbar_field_highlight_text": "#eaeaea"*/
   --autocomplete-popup-highlight-background: var(--button-primary-bgcolor) !important;                             /*"popup_highlight": "#006f80"*/
   --autocomplete-popup-highlight-color: #eaeaea !important;                                                        /*"popup_highlight-letras": "#006f80"*/
-  --lwt-toolbarbutton-icon-fill-attention: #4d7afe !important;                                                     /*"icons_attention": "#00dbfd"*/  
+  --lwt-toolbarbutton-icon-fill-attention: var(--main-background-var) !important;                                                     /*"icons_attention": "#00dbfd"*/  
   
   --toolbarbutton-hover-background: color-mix(in srgb, transparent 88%, var(--tab-selected-textcolor)) !important;           /*"button_background_hover": "#26242e"*/
   --toolbarbutton-active-background: color-mix(in srgb, transparent 80%, var(--tab-selected-textcolor)) !important;          /*"button_background_active": "#26242e"*/
@@ -228,6 +229,10 @@
 /* ----------------------------------------- Private Browsing Mode ----------------------------------------- */
 
 :root[privatebrowsingmode="temporary"] {
+  --main-background-var: #7d34c3;
+  --main-background-var-darkened: color-mix(in srgb, var(--main-background-var) 40%, transparent 60%);
+  --main-background-var-darkened2: color-mix(in srgb, var(--main-background-var) 40%, black 50%);
+  --main-background-var-lightened-strong: color-mix(in srgb, var(--main-background-var) 60%, black 40%);
   --lwt-header-image: none !important; 
   --lwt-additional-images: none !important;
   --lwt-main-image: none !important;
